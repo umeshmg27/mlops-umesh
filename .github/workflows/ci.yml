@@ -32,5 +32,7 @@ jobs:
         run: |
           python scripts/download_data.py
           python scripts/run_eda.py
-          python scripts/train_model.py --cv 3
-
+          python scripts/train_model.py \
+            --cv 3 \
+            --tracking-uri file:/tmp/heart-disease-mlruns \
+            --experiment-name ci-heart-disease-classification
