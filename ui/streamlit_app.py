@@ -9,6 +9,9 @@ import streamlit as st
 
 API_URL = os.getenv("API_URL", "http://localhost:8000").rstrip("/")
 ARTIFACT_ROOT = Path(os.getenv("ARTIFACT_ROOT", "."))
+MLFLOW_URL = os.getenv("MLFLOW_URL", "http://localhost:5001").rstrip("/")
+PROMETHEUS_URL = os.getenv("PROMETHEUS_URL", "http://localhost:9090").rstrip("/")
+GRAFANA_URL = os.getenv("GRAFANA_URL", "http://localhost:3000").rstrip("/")
 
 
 def _load_json(path: Path) -> dict:
@@ -124,9 +127,9 @@ def main() -> None:
             {
                 "API": API_URL,
                 "Swagger": f"{API_URL}/docs",
-                "MLflow": "http://localhost:5001",
-                "Prometheus": "http://localhost:9090",
-                "Grafana": "http://localhost:3000",
+                "MLflow": MLFLOW_URL,
+                "Prometheus": PROMETHEUS_URL,
+                "Grafana": GRAFANA_URL,
             }
         )
 

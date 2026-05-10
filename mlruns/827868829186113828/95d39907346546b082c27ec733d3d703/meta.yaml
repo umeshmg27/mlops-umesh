@@ -1,4 +1,4 @@
-artifact_uri: file:///Users/ugangadh/Desktop/Bits/Sem-2/MLOps/mlruns/827868829186113828/95d39907346546b082c27ec733d3d703/artifacts
+artifact_uri: file:mlruns/827868829186113828/95d39907346546b082c27ec733d3d703/artifacts
 end_time: 1778427775514
 entry_point_name: ''
 experiment_id: '827868829186113828'
@@ -11,4 +11,4 @@ source_version: ''
 start_time: 1778427773740
 status: 3
 tags: []
-user_id: ugangadh
+user_id: mlops-user

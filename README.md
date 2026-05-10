@@ -73,7 +73,7 @@ Services:
 - UI: <http://localhost:8501>
 - MLflow: <http://localhost:5001>
 - Prometheus: <http://localhost:9090>
-- Grafana: <http://localhost:3000> (`admin` / `admin`)
+- Grafana: <http://localhost:3000>
 
 Stop the Compose stack:
 

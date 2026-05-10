@@ -1,4 +1,4 @@
-artifact_location: file:///Users/ugangadh/Desktop/Bits/Sem-2/MLOps/mlruns/827868829186113828/models/m-1b702bb52f024148b5f609689e56c5bc/artifacts
+artifact_location: file:mlruns/827868829186113828/models/m-1b702bb52f024148b5f609689e56c5bc/artifacts
 creation_timestamp: 1778422111608
 experiment_id: '827868829186113828'
 last_updated_timestamp: 1778422113661

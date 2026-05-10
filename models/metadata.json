@@ -2,8 +2,8 @@
   "model_name": "logistic_regression",
   "trained_at": "2026-05-10T15:42:55.516862+00:00",
   "selection_metric": "test_roc_auc",
-  "model_path": "/Users/ugangadh/Desktop/Bits/Sem-2/MLOps/models/model.joblib",
-  "data_path": "/Users/ugangadh/Desktop/Bits/Sem-2/MLOps/data/processed/heart_clean.csv",
+  "model_path": "models/model.joblib",
+  "data_path": "data/processed/heart_clean.csv",
   "target_column": "target",
   "metrics": {
     "logistic_regression": {
@@ -22,8 +22,8 @@
         "test_roc_auc": 0.9664502164502166
       },
       "figures": [
-        "/Users/ugangadh/Desktop/Bits/Sem-2/MLOps/reports/figures/logistic_regression/confusion_matrix.png",
-        "/Users/ugangadh/Desktop/Bits/Sem-2/MLOps/reports/figures/logistic_regression/roc_curve.png"
+        "reports/figures/logistic_regression/confusion_matrix.png",
+        "reports/figures/logistic_regression/roc_curve.png"
       ]
     },
     "random_forest": {
@@ -42,8 +42,8 @@
         "test_roc_auc": 0.9512987012987013
       },
       "figures": [
-        "/Users/ugangadh/Desktop/Bits/Sem-2/MLOps/reports/figures/random_forest/confusion_matrix.png",
-        "/Users/ugangadh/Desktop/Bits/Sem-2/MLOps/reports/figures/random_forest/roc_curve.png"
+        "reports/figures/random_forest/confusion_matrix.png",
+        "reports/figures/random_forest/roc_curve.png"
       ]
     }
   }

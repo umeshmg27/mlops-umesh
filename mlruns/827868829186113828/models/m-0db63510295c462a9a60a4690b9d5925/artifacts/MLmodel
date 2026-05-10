@@ -1,4 +1,4 @@
-artifact_path: file:///Users/ugangadh/Desktop/Bits/Sem-2/MLOps/mlruns/827868829186113828/models/m-0db63510295c462a9a60a4690b9d5925/artifacts
+artifact_path: file:mlruns/827868829186113828/models/m-0db63510295c462a9a60a4690b9d5925/artifacts
 flavors:
   python_function:
     env:

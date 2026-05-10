@@ -23,6 +23,7 @@ from heart_disease_mlops.config import (
     MODEL_METADATA_PATH,
     MODEL_PATH,
     PROCESSED_DATA_PATH,
+    PROJECT_ROOT,
     RANDOM_STATE,
     TARGET_COLUMN,
 )
@@ -77,6 +78,14 @@ def _save_roc_curve(y_true: pd.Series, y_prob: np.ndarray, output_path: Path) ->
     fig.savefig(output_path, dpi=160)
     plt.close(fig)
     return output_path
+
+
+def _portable_path(path: str | Path) -> str:
+    resolved = Path(path).resolve()
+    try:
+        return resolved.relative_to(PROJECT_ROOT).as_posix()
+    except ValueError:
+        return str(path)
 
 
 def run_training(
@@ -169,7 +178,7 @@ def run_training(
 
         results[name] = {
             "metrics": all_metrics,
-            "figures": [str(confusion_path), str(roc_path)],
+            "figures": [_portable_path(confusion_path), _portable_path(roc_path)],
         }
 
         score = metrics["roc_auc"]
@@ -189,8 +198,8 @@ def run_training(
         "model_name": best_name,
         "trained_at": datetime.now(UTC).isoformat(),
         "selection_metric": "test_roc_auc",
-        "model_path": str(model_path),
-        "data_path": str(data_path),
+        "model_path": _portable_path(model_path),
+        "data_path": _portable_path(data_path),
         "target_column": TARGET_COLUMN,
         "metrics": results,
     }
