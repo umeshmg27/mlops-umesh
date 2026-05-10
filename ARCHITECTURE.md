@@ -165,7 +165,7 @@ API endpoints:
 - `POST /predict`: one patient prediction.
 - `POST /batch-predict`: multiple patient predictions.
 - `GET /metrics`: Prometheus metrics endpoint.
-- `GET /docs`: Swagger UI generated from OpenAPI.
+- `GET /docs`: Swagger UI provided from the OpenAPI schema.
 
 ## 8. UI Layer
 
@@ -222,7 +222,7 @@ The API container runs `scripts/bootstrap.py` before starting FastAPI. This mean
 
 - If the dataset exists locally, it is reused.
 - If the dataset is missing, it is downloaded.
-- If processed data or figures are missing, EDA is regenerated.
+- If processed data or figures are missing, the EDA step runs again.
 - If the model is missing, training is executed.
 
 ## 11. Kubernetes View

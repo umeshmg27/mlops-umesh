@@ -1,7 +1,7 @@
 # MLflow Runs Summary
 
 The repository includes the local MLflow file store under `mlruns/`. The latest training run was executed
-after the dataset and pipeline were generated, and MLflow logged separate runs for Logistic Regression and
+after the dataset and pipeline were prepared, and MLflow logged separate runs for Logistic Regression and
 Random Forest.
 
 ## Latest Selected Model

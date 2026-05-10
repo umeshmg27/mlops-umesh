@@ -48,7 +48,7 @@ contains a reproducible download script.
 The download workflow is implemented in `scripts/download_data.py`. Its important behavior is that it
 checks the local filesystem first. If `data/raw/heart.csv` already exists, the script uses the local copy.
 If the file is missing, it downloads the dataset from UCI. This supports both reliable local execution and
-repeatable automated runs in CI or container startup.
+repeatable CI or container startup runs.
 
 The raw processed Cleveland file contains 303 records and 14 columns. The feature columns are:
 
@@ -81,7 +81,7 @@ consistent way. This is preferable to manually dropping rows because the dataset
 and imputing inside the modeling pipeline improves reproducibility and ensures the same transformation is
 used during training and inference.
 
-The generated EDA artifacts include:
+The EDA artifacts include:
 
 - Class balance chart showing the distribution of the binary target.
 - Missing-value chart showing where input data contains missing fields.
@@ -183,8 +183,8 @@ for this assignment a committed artifact makes local review easier.
 ## 9. FastAPI Serving and Swagger
 
 The serving layer is implemented in `src/heart_disease_mlops/api.py` using FastAPI. FastAPI was chosen
-because it provides a clean Python API framework, automatic request validation through Pydantic, and
-automatic Swagger/OpenAPI documentation.
+because it provides a clean Python API framework, request validation through Pydantic, and
+Swagger/OpenAPI documentation.
 
 The API exposes these endpoints:
 
@@ -369,14 +369,13 @@ The repository includes the following submission evidence:
 - MLflow summary: `docs/mlflow_runs_summary.md`
 - Final report: `docs/final_report.pdf`
 - EDA and model figures: `reports/figures/`
-- Runtime screenshots and terminal evidence: `reports/screenshots/`
+- Runtime screenshots: `reports/screenshots/`
 - Kubernetes manifests: `k8s/`
 - Monitoring configuration: `monitoring/`
 - CI/CD workflow: `.github/workflows/ci.yml`
 
 The evidence folder includes API health, Swagger, prediction response, Streamlit UI, MLflow, Prometheus,
-Grafana, Podman container status, and terminal service evidence. Some browser evidence was captured from
-the running local stack, and the terminal evidence was generated after sending real prediction traffic.
+Grafana, and Podman container status captured from the running local stack.
 
 ## 17. Limitations and Future Improvements
 

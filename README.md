@@ -99,18 +99,6 @@ python scripts/train_model.py --cv 3
 - PDF report: `docs/final_report.pdf`
 - Detailed architecture: `ARCHITECTURE.md`
 
-For real terminal evidence screenshots after Docker/Podman Compose is running:
-
-```bash
-python scripts/service_evidence.py
-```
-
-Regenerate the PDF report:
-
-```bash
-python scripts/build_report_pdf.py
-```
-
 ## Kubernetes: Local Deployment
 
 Build the image locally:
@@ -153,7 +141,7 @@ or `--force` is used.
 - Trained model package and metadata: `models/model.joblib`, `models/metadata.json`
 - MLflow file-store runs: `mlruns/`
 - EDA and model evaluation figures: `reports/figures/`
-- Runtime screenshots and terminal evidence: `reports/screenshots/`
+- Runtime screenshots: `reports/screenshots/`
 - MLflow run summary: `docs/mlflow_runs_summary.md`
 
 ## Project Structure
@@ -165,7 +153,7 @@ ui/                        Streamlit visual UI
 tests/                     Unit and API tests
 k8s/                       Local Kubernetes manifests
 monitoring/                Prometheus and Grafana config
-docs/                      Final report and architecture notes
+docs/                      Final report and MLflow summary
 data/                      Included raw and processed dataset files
 models/                    Included trained model and metadata outputs
 reports/                   Included EDA figures and screenshot evidence

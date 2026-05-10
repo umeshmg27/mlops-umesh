@@ -1,1 +1,0 @@
-{'prediction': 1, 'label': 'Heart disease risk', 'risk_probability': 0.5541401413039229, 'confidence': 0.5541401413039229, 'model_name': 'logistic_regression'}

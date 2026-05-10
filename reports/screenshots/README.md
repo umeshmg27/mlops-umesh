@@ -1,8 +1,6 @@
 # Screenshot Checklist
 
 This folder contains local runtime evidence captured after the Podman Compose stack was running.
-For final submission, prefer real terminal/browser snips because they look more authentic than generated
-evidence images.
 
 Captured screenshots:
 
@@ -21,13 +19,7 @@ Manual browser screenshots captured from the running local stack:
 - `manual_prometheus_targets.png`: Prometheus target health at `http://localhost:9090/targets`
 - `manual_grafana_dashboard.png`: Grafana monitoring dashboard at `http://localhost:3000`
 
-Recommended real terminal screenshot:
-
-```bash
-python scripts/service_evidence.py
-```
-
-Recommended real browser screenshots:
+Useful browser pages for additional manual screenshots:
 
 ```text
 http://localhost:8000/docs
@@ -36,9 +28,6 @@ http://localhost:5001
 http://localhost:9090/targets
 http://localhost:3000
 ```
-
-Note: `streamlit_ui_evidence.png` and `grafana_dashboard_evidence.png` are generated visual evidence
-files. They are useful for the report, but terminal/browser snips are better for strict submission proof.
 
 Still manual after external setup:
 
