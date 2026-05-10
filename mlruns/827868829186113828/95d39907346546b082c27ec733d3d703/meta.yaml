@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ugangadh/Desktop/Bits/Sem-2/MLOps/mlruns/827868829186113828/95d39907346546b082c27ec733d3d703/artifacts
+end_time: 1778427775514
+entry_point_name: ''
+experiment_id: '827868829186113828'
+lifecycle_stage: active
+run_id: 95d39907346546b082c27ec733d3d703
+run_name: random_forest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778427773740
+status: 3
+tags: []
+user_id: ugangadh

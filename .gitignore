@@ -1,0 +1,26 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.cache/
+*.egg-info/
+*.tar.gz
+
+# Local assignment/submission extras kept out of the code repo
+Mlops_Assignment1*.pdf
+docs/assignment_extracted.md
+docs/deliverables_checklist.md
+docs/demo_script_5_min.md
+docs/user_stories.md
+docs/final_report.docx
+reports/screenshots/Screenshot*.png
+scripts/build_visual_evidence.py
+scripts/capture_web_screenshot.mjs
+scripts/export_report_docx.py
+scripts/render_text_screenshot.py
+
+# Local environment overrides
+.env

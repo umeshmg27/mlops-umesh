@@ -1,0 +1,50 @@
+{
+  "model_name": "logistic_regression",
+  "trained_at": "2026-05-10T15:42:55.516862+00:00",
+  "selection_metric": "test_roc_auc",
+  "model_path": "/Users/ugangadh/Desktop/Bits/Sem-2/MLOps/models/model.joblib",
+  "data_path": "/Users/ugangadh/Desktop/Bits/Sem-2/MLOps/data/processed/heart_clean.csv",
+  "target_column": "target",
+  "metrics": {
+    "logistic_regression": {
+      "metrics": {
+        "cv_accuracy_mean": 0.8551870748299321,
+        "cv_precision_mean": 0.8730744935655421,
+        "cv_recall_mean": 0.8098814229249012,
+        "cv_roc_auc_mean": 0.9024779568257829,
+        "cv_accuracy_std": 0.023767881465657423,
+        "cv_precision_std": 0.062069878232006284,
+        "cv_recall_std": 0.061619526545154374,
+        "cv_roc_auc_std": 0.014803685378876278,
+        "test_accuracy": 0.8688524590163934,
+        "test_precision": 0.8125,
+        "test_recall": 0.9285714285714286,
+        "test_roc_auc": 0.9664502164502166
+      },
+      "figures": [
+        "/Users/ugangadh/Desktop/Bits/Sem-2/MLOps/reports/figures/logistic_regression/confusion_matrix.png",
+        "/Users/ugangadh/Desktop/Bits/Sem-2/MLOps/reports/figures/logistic_regression/roc_curve.png"
+      ]
+    },
+    "random_forest": {
+      "metrics": {
+        "cv_accuracy_mean": 0.8014455782312926,
+        "cv_precision_mean": 0.7899208806329548,
+        "cv_recall_mean": 0.782608695652174,
+        "cv_roc_auc_mean": 0.8982112090807742,
+        "cv_accuracy_std": 0.0227821341727651,
+        "cv_precision_std": 0.04874155140931207,
+        "cv_recall_std": 0.0892878289186563,
+        "cv_roc_auc_std": 0.03011584657991457,
+        "test_accuracy": 0.8524590163934426,
+        "test_precision": 0.8064516129032258,
+        "test_recall": 0.8928571428571429,
+        "test_roc_auc": 0.9512987012987013
+      },
+      "figures": [
+        "/Users/ugangadh/Desktop/Bits/Sem-2/MLOps/reports/figures/random_forest/confusion_matrix.png",
+        "/Users/ugangadh/Desktop/Bits/Sem-2/MLOps/reports/figures/random_forest/roc_curve.png"
+      ]
+    }
+  }
+}

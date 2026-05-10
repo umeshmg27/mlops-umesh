@@ -1,0 +1,6 @@
+NAMES               STATUS                  PORTS
+mlops_api_1         Up 2 minutes (healthy)  0.0.0.0:8000->8000/tcp
+mlops_ui_1          Up 2 minutes            0.0.0.0:8501->8501/tcp, 8000/tcp
+mlops_mlflow_1      Up 2 minutes            0.0.0.0:5001->5000/tcp, 8000/tcp
+mlops_prometheus_1  Up 2 minutes            0.0.0.0:9090->9090/tcp
+mlops_grafana_1     Up 2 minutes            0.0.0.0:3000->3000/tcp

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ugangadh/Desktop/Bits/Sem-2/MLOps/mlruns/827868829186113828/d6b8fa538087486ea5286806e56b146e/artifacts
+end_time: 1778421956260
+entry_point_name: ''
+experiment_id: '827868829186113828'
+lifecycle_stage: active
+run_id: d6b8fa538087486ea5286806e56b146e
+run_name: logistic_regression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778421954108
+status: 3
+tags: []
+user_id: ugangadh

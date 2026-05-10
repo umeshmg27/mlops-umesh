@@ -1,0 +1,16 @@
+.venv
+__pycache__
+*.pyc
+.pytest_cache
+.ruff_cache
+.DS_Store
+mlruns
+reports/screenshots
+data/raw/*.csv
+data/processed/*.csv
+models/*.json
+models/*.joblib
+models/*.pkl
+models/*.onnx
+reports/figures/*.png
+reports/figures/*/

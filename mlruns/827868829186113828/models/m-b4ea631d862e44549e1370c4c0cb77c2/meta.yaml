@@ -1,0 +1,10 @@
+artifact_location: file:///Users/ugangadh/Desktop/Bits/Sem-2/MLOps/mlruns/827868829186113828/models/m-b4ea631d862e44549e1370c4c0cb77c2/artifacts
+creation_timestamp: 1778421954121
+experiment_id: '827868829186113828'
+last_updated_timestamp: 1778421956258
+model_id: m-b4ea631d862e44549e1370c4c0cb77c2
+model_type: null
+name: model
+source_run_id: d6b8fa538087486ea5286806e56b146e
+status: 2
+status_message: null
